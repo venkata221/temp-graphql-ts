@@ -9,7 +9,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source:
-    path:newtry
+    path: newtry
     repoURL: "git@github.com:venkata221/temp-graphql-ts.git"
     targetRevision: main
   syncPolicy:
