@@ -1,1 +1,21 @@
 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kkkk-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: kkkk-ui
+  template:
+    metadata:
+      labels:
+        app: kkkk-ui
+    spec:
+      containers:
+      - image: gcr.io/heptio-images/ks-kkkk-demo:0.2
+        name: kkkk-ui
+        ports:
+        - containerPort: 80
