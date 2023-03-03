@@ -15,7 +15,7 @@ spec:
         app: kkkk-ui
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-kkkk-demo:0.2
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: kkkk-ui
         ports:
         - containerPort: 80
